@@ -11,7 +11,7 @@ def random_with_N_digits(n):
     range_end = 10**(n-1)-1
     return randint(range_start, range_end)
 
-@app.route('/api/v1/pin/generate/', methods=['GET'])
+@app.route('/api/generate/', methods=['GET'])
 def generate_pin():
     """generate pin."""
 
